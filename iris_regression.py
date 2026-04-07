@@ -25,9 +25,9 @@ def plot_regression(data, species, regression):
     plt.scatter(x, y)
     plt.plot(x, regression.slope * x + regression.intercept)
 
-    plt.xlabel("Petal length")
-    plt.ylabel("Sepal length")
-    plt.title(species)
+    plt.xlabel("Petal length (cm)")
+    plt.ylabel("Sepal length (cm)")
+    plt.title(f"{species} Regression")
 
     plt.savefig(f"{species}.png")
     plt.close()
